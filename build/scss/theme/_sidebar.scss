@@ -1,0 +1,254 @@
+//Branding and Main Navigation
+@media screen and (min-width: 40em) {
+
+.branding {
+  background-color: $primary;
+  padding: 0;
+  max-width: 260px !important;
+  margin-bottom: 1rem;
+}
+
+.calltos {
+
+  margin-bottom: 0;
+  font-weight: bold;
+
+    a {
+        
+        font-size: 1.1rem !important;
+        padding-top: 1.05rem;
+        padding-bottom: 1.05rem;
+       
+    }
+
+  a.primary {
+    background-color: #82082A;
+
+    &:hover {
+      background-color: $medium-gray;
+      color: $primary;
+    }
+
+  }
+
+  a.secondary {
+
+    background-color: $secondary;
+
+    &:hover {
+      background-color: $medium-gray;
+      color: $primary;
+    }
+
+  }
+
+}
+.custom-logo-link, .mobile-logo {
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.custom-logo-link {
+  margin: 1rem 2rem;
+}
+.mobile-logo {
+  margin: .5rem;
+}
+.tagline {
+  color: $white;
+  font-weight: 600;
+  padding: 0 0 0 .4rem;
+  text-align: center;
+  font-size: 1rem;
+}
+#main-menu,
+#menu-container,
+#popout-menu {
+  //main sidebar styles
+  background-color: $light-gray;
+  width: 250px;
+  //do not change these styles
+  overflow: visible;
+  position: absolute;
+  z-index: 99999;
+
+  .gcc-main-nav {
+    //sidebar navigation styles
+    background-color: $light-gray;
+    margin: 1rem 0 0 0;
+    position: relative;
+    //top menu
+    li {
+      a {
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects;
+        line-height: inherit;
+        color: $primary;
+        cursor: pointer;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        font-weight: 600;
+        transition: all 0.25s ease-in;
+        font-size: 1rem;
+
+        span {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          font-size: 1.2rem;
+        }
+
+      }
+      a:hover {
+        background-color: $medium-gray;
+        color: $secondary;
+      }
+
+      a::selection {
+        //keeps top menu item highlighted when over pop out menu
+        background-color: $medium-gray;
+
+      }
+      //pop out menu
+      ul.nested {
+        width: 830px;
+        padding: 1rem;
+        background-color: $medium-gray;
+        top: -50px;
+        left: 250px;
+
+        li {
+          //puts menu items into columns
+          width: 100% !important;
+          width: 36%;
+          max-width: 360px !important;
+          /*Adjust width of columnes*/
+          position: relative;
+          display: inline-block;
+          margin: 0 1rem;
+
+          a {
+            transition: all 0.25s ease-in;
+            border-bottom: 1px solid rgba(0,0,0, .2);
+            padding: 0.5rem;
+            color: $black;
+          }
+
+          a:hover {
+            background-color: $light-gray;
+            color: $primary;
+          }
+
+          a::before {
+            font-family: 'FontAwesome';
+            content: "\f054";
+            left: 0;
+            padding-right: 0.8rem;
+            font-size: 0.5rem;
+          }
+        }
+      }
+
+      li:hover a {
+        //popout menu hover
+        background-color: $medium-gray;
+      }
+    }
+li.support-link {
+
+    margin: 1rem auto 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 0 1rem;
+
+    a {
+            background-color: $medium-gray;
+            font-size: 2.2rem;
+            line-height: 2.6rem;
+            padding: 1rem;
+    }
+
+  a:hover {
+        color: $secondary;
+  }
+}
+li.menu-calltos {
+
+    margin: 1rem auto 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 0 1rem;
+
+    a {
+            background-color: $medium-gray;
+            font-size: 2rem;
+            line-height: 2.4rem;
+            padding: 1rem;
+    }
+
+  a:hover {
+        color: $secondary;
+  }
+}
+    .active > a {
+      background-color: $medium-gray;
+      color: $primary;
+    }
+
+    li:hover a {
+      //top menu hover
+      background-color: $medium-gray;
+      color: $primary;
+    }
+  }
+}
+
+}
+.menu-extras {
+  //items that appear under main navigation
+  position: relative;
+
+  a.career-coach,
+  a.menu-banner {
+    display: block;
+    background: center center no-repeat;
+    margin: 0 auto 1rem auto;
+
+    span {
+      text-indent: -9999px;
+      display: block;
+    }
+  }
+
+  a.menu-banner {
+    //sidebar ad
+    width: 280px;
+    height: 300px;
+    margin-bottom: 1rem;
+  }
+
+  a.career-coach {
+    //sidebar ad
+    width: 280px;
+    height: 280px;
+  }
+
+}
+
+//timer
+.time_circles > div > h4 {
+
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: .8rem !important;
+
+  }
+p.timer-text {
+  text-align: center; 
+  color: #a30936; 
+  font-weight: 800; 
+  padding: 1rem 0 0 0; 
+  font-size: 1.2rem;
+}

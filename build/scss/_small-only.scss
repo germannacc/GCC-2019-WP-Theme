@@ -1,0 +1,166 @@
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+//  popout links
+  ul.dropdown.menu {
+    li.mygcc {
+      a {
+        padding: 0.9rem 1rem;
+    font-size: 1rem;
+  }
+}
+  }
+//main navigation links
+  .gcc-main-nav {
+  background-color: $light-gray !important;
+  margin: 1rem 0 0 0;
+  position: relative;
+  li {
+      a {
+        font-size: 1rem;
+}
+    }
+  }
+  //page heading
+  .hero-section {
+  height: auto;
+  img {
+  height: auto;
+}
+
+
+}
+
+.hero-section-text {
+
+ul.page-icons {
+    display: none;
+}
+}
+
+.crumbs-container {
+  position: relative;
+  display: block;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  .breadcrumbs {
+     margin-left: 0;
+  padding: 0;
+  li  {
+
+        padding: 0;
+  a {
+           font-weight: 700;
+  padding: 0;
+}
+
+      }
+
+li.disabled {
+  color: $dark-gray;
+}
+
+    }
+
+    }
+
+.crumbs-container {
+  border-bottom: 5px solid $primary;
+  .breadcrumbs {
+        margin-left: 4.2%;
+  margin-top: 1rem;
+  padding: 0;
+  font-size: 1rem;
+  li {
+          padding: 0;
+  a {
+            font-weight: 700;
+}
+        }
+      }
+    }
+
+.hero-section-single {
+  height: auto;
+  display: block;
+  position: relative;
+  img  {
+
+      height: auto;
+  width: 100%;
+}
+
+.hero-section-text {
+  position: relative;
+  display: block;
+  margin: 0;
+  left: 0;
+  padding: .5rem 1rem;
+  .entry-title {
+      font-size: 1.1rem;
+}
+
+.entry-meta {
+  padding: .5em 0;
+}
+
+  }
+  }
+//page and post content
+  .entry-content {
+  padding: 2rem  auto;
+  h2 {
+  margin-top: 1rem;
+}
+
+.callout.primary {
+  margin-bottom: 1rem;
+  h2, h3 {
+      font-size: 1.2rem;
+}
+
+p {
+  padding-left: .5rem;
+}
+
+a.button.primary {
+  padding-left: .5rem;
+}
+
+  }
+
+ul {
+  margin-bottom: 0;
+}
+
+  }
+
+.marketing-site-footer {
+  p {
+    text-align: center;
+}
+
+ul.policy-menu {
+margin: 1rem auto;
+width: 48%;
+
+  li {
+    text-align: center;
+  }
+}
+
+}
+
+.callout.callout-workforce-highlights {
+
+  h4.post-title {
+    min-height: 100px;
+    font-size: 1.2rem;
+  }
+  min-height: auto !important;
+  border: 1px solid $medium-gray !important;
+
+}
+
+
+}

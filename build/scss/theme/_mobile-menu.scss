@@ -1,0 +1,328 @@
+.title-bar {
+
+padding: .5rem !important;
+
+.title-bar-left {
+  
+  margin: 0;
+  position: relative;
+
+  a.logo {
+    padding: 1rem;
+    height: 49px;
+    width: 164px;
+    text-indent: -9999px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    margin: 1rem;
+  }
+   
+   button {
+    color: $white;
+    padding: 1rem;
+    font-size: 1.8rem;
+    font-weight: 800;
+
+    span {
+      padding-right: 1rem;
+    }
+
+  }
+
+}
+
+}
+.menu-icon {
+  margin: 1.3rem 1rem 0 1rem !important;
+  height: 32px !important;
+  width: 32px !important;
+}
+
+.mobile-menu {
+  background-color: $light-gray;
+  border-bottom: 5px solid $primary;
+
+  .menu-extras {
+    margin-top: 0;
+    background-color: $light-gray;
+    padding: 0;
+
+    img {
+      min-width: 100%;
+    }
+
+}
+
+menu-extras a.career-coach, .menu-extras a.menu-banner {
+    display: block;
+    background: center center no-repeat;
+    margin: 0 auto 1rem auto;
+}
+
+  .button-group {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+  .close-mobile {
+    position: relative;
+    height: 50px;
+    background-color: $secondary;
+  }
+
+  button.close-button {
+    right: 0;
+    color: $white;
+    display: block;
+    width: 100%;
+    text-align: right;
+    padding-right: 1rem;
+    padding-top: 0.3rem;
+    font-size: 1.2rem;
+    border: none;
+}
+
+  .branding {
+
+    max-width: 100% !important;
+    background-color: $primary;
+    
+    .mygcc {
+
+      margin-bottom: 1rem;
+      text-align: center;
+
+      a {
+
+          color: $primary;
+          border-bottom: 1px solid $dark-gray;
+          font-weight: 800;
+          background-color: $light-gray;
+          padding: 1.2rem 1rem;    
+    
+      }
+
+    }
+
+}
+  .tagline {
+    p.lead {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: $white;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+  [type=text] {
+    width: 100%;
+    height: 49.8px;
+    color: $dark-gray;
+    padding-left: 1rem;
+  }
+  [type=color],
+  [type=date],
+  [type=datetime-local],
+  [type=datetime],
+  [type=email],
+  [type=month],
+  [type=number],
+  [type=password],
+  [type=search],
+  [type=tel],
+  [type=text],
+  [type=time],
+  [type=url],
+  [type=week],
+  textarea {
+    -webkit-box-shadow: inset 0 1px 2px rgba(2,4,7,.6);
+    box-shadow: inset 0 1px 2px rgba(2,4,7,.6);
+    font-family: inherit;
+    color: $dark-gray;
+  }
+  .alert {
+    margin-top: 0;
+    padding: 0.8rem 0.2rem 0.1rem;
+    text-align: center;
+
+    p.lead {
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .alert-button {
+      border: 2px solid $primary;
+      color: $primary;
+      font-weight: 700;
+
+      span {
+        padding-right: 0.4rem;
+        color: $primary;
+      }
+    }
+  }
+
+  .mobile-search {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    input[placeholder] {
+      color: $dark-gray;
+    }
+
+    input {
+      box-shadow: 5px 10px $dark-gray;
+    }
+  }
+}
+.mobile-nav {
+
+  ul.menu {
+    margin-bottom: 0;
+
+  li {
+
+      a {
+          color: $primary;
+          border-bottom: 1px solid $dark-gray;
+          font-weight: 800;
+          background-color: $light-gray;
+          padding: 1.2rem 1rem;    
+      /* visited link */
+
+  &:visited {
+          color: $primary;
+      }
+
+    &:hover {
+          color: $secondary;
+          text-decoration: underline;
+      }
+      /* selected link */
+     &:active {
+          color: $secondary!important;
+          text-decoration: underline;
+      }
+    }
+          ul.nested {
+
+                li  {
+
+                    a {
+                    color: $secondary !important;
+                    background-color: $light-gray;
+                    
+                    /* visited link */
+                    &:visited {
+                        color: $primary;
+                        background-color: $medium-gray;
+                    }
+                    /* mouse over link */
+                    &:hover {
+                        color: $primary !important;
+                        background-color: $medium-gray;
+                    }
+                    /* selected link */
+                    &:active {
+                        color: $white;
+                        background-color: $light-gray;
+                    }
+
+                  }
+
+          }
+
+    }
+
+  }
+    li.mobile-quicklink {
+      background-color: $white;
+
+      a {
+       color: $secondary !important;
+       border-bottom: none;
+       padding: 1rem 1rem .6rem 1rem;   
+      
+      /* visited link */
+      &:visited {
+       color: $secondary !important;
+      }
+
+      /* mouse over link */
+      &:hover {
+        color: $secondary !important;
+      }
+      /* selected link */
+      &:active {
+        color: $secondary !important;
+        text-decoration: none !important;
+      }
+    }
+    li.give-button {
+      a {
+          color: $white !important;
+          border-radius: 0;
+    
+      /* visited link */
+      &:visited {
+          color: $white !important;
+          text-decoration: underline;
+
+      }
+      /* mouse over link */
+      &:hover {
+         color: $white !important;
+      }
+      /* selected link */
+      &:active {
+          color: $white;
+      }
+    }
+  }
+    li.support-link {
+
+        margin: 1rem auto 0 auto;
+        width: 280px;
+        text-align: center;
+
+        a {
+                background-color: $medium-gray;
+                font-size: 2.2rem;
+                line-height: 2.6rem;
+                padding: 1rem;
+        
+       &:hover {
+            color: $secondary;
+      }
+
+    }
+  }
+  }
+}
+.menu .active > a, .menu .is-active > a {
+  background: $light-gray;
+  color: $secondary !important;
+}
+.menu .active > a:before, .menu .is-active > a:before {
+  font-family: FontAwesome;
+  content: "\f054";
+  text-decoration: none;
+  margin-right: 2px;
+}
+.menu li.mobile-quicklink.active > a, .menu li.mobile-quicklink.is-active > a {
+  background: $light-gray;
+  color: $primary !important;
+}
+.menu li.mobile-quicklink.active > a:before, .menu li.mobile-quicklink.is-active > a:before {
+  font-family: FontAwesome;
+  content: "\f054";
+  text-decoration: none;
+  margin-right: 2px;
+}
+}

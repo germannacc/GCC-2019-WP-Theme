@@ -1,0 +1,302 @@
+.top-bar {
+  padding: 0;
+  background-color: $light-gray;
+  border-bottom: 1px solid $medium-gray;
+  width: 100%;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.quicklinks {
+  padding: 0;
+  margin: 0;
+
+  background-color: $medium-gray;
+  
+  .quicklinks-box {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+ 
+ul.dropdown.menu {
+      padding-left: .1rem;
+li {
+
+ a {
+       color: $secondary;
+       background-color: $medium-gray;
+       font-weight: 400;
+       transition: all 0.06s ease-in;
+       padding: 1rem .8rem;
+       margin-right: .1rem;
+       font-size: 0.875rem;
+
+&:hover {
+     background-color: $white !important;
+     color: $primary !important;
+}
+
+&:after {
+  display: none;
+  padding-right: 0;
+}
+
+&:selection {
+  background-color: $medium-gray;
+  color: $primary;
+}
+}
+      }
+
+.active > a {
+  background-color: $medium-gray;
+  color: $primary;
+}
+
+li:hover a {
+  background-color: $medium-gray;
+}
+
+ul.vertical.menu {
+
+  z-index: 9999999;
+  width: 300px;
+  background-color: $medium-gray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  li {
+
+  a {
+  color: $black;
+  padding: 0.8rem .8rem;
+  font-weight: bold;
+  transition: all 0.06s ease-in;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid rgba(0,0,0, .2);
+  span {
+              margin-right: 0.5rem;
+   }
+         
+
+&:before {
+  font-family: 'FontAwesome';
+  content: "\f054";
+  left: 0;
+  padding-right: 0.8rem;
+  font-size: 0.5rem;
+}
+
+&:hover {
+  background-color: $white;
+  color: $primary;
+}
+
+&:selection {
+  background-color: $light-gray;
+}
+        }
+
+      }
+
+li.is-dropdown-submenu {
+  a:after {
+            display: none;
+  padding-right: 0;
+}
+        }
+      }
+    }
+  }
+}
+li.give-button {
+
+  a {
+    transition: all 0.25s ease-in;
+    color: $white !important;
+    padding-left: 1.4rem !important;
+    padding-right: 1.4rem !important;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#627d4d+0,1f3b08+100;Olive+3D */
+    background: #627d4d;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #627d4d 0%, #1f3b08 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #627d4d 0%,#1f3b08 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #627d4d 0%,#1f3b08 100%);
+  
+}
+
+   a:hover {
+    transition: all 0.25s ease-in;
+    color: $white !important;
+    padding-left: 1.4rem !important;
+    padding-right: 1.4rem !important;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#506b3a+0,#627d4d+100;Olive+3D */
+    background: #506b3a;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #506b3a 0%, #627d4d 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #506b3a 0%,#627d4d 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #506b3a 0%,#627d4d 100%);
+  }
+
+}
+
+
+li.give-button.active > a {
+  transition: all 0.25s ease-in;
+  color: $white !important;
+  padding-left: 1.4rem !important;
+  padding-right: 1.4rem !important;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#627d4d+0,1f3b08+100;Olive+3D */
+  background: #627d4d;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #627d4d 0%, #1f3b08 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #627d4d 0%,#1f3b08 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #627d4d 0%,#1f3b08 100%);
+&:hover {
+  transition: all 0.25s ease-in;
+  color: $white !important;
+  padding-left: 1.4rem !important;
+  padding-right: 1.4rem !important;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#506b3a+0,#627d4d+100;Olive+3D */
+  background: #506b3a;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #506b3a 0%, #627d4d 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #506b3a 0%,#627d4d 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #506b3a 0%,#627d4d 100%);
+}
+}
+li.my-gcc {
+ a {
+       color: $primary !important;
+       background-color: $medium-gray;
+       font-weight: 800;
+       transition: all 0.06s ease-in;
+       padding-left: 1rem !important;
+       padding-right: 1rem !important;
+     span {
+       padding-right: .2rem;
+     }
+   &:hover {
+     background-color: $dark-gray !important;
+     color: $white !important;
+   }
+  }
+}
+.top-bar input {
+  max-width: 400px !important;
+  margin-right: 0 !important;
+  height: 100%;
+  box-shadow: inset 0 0 4px 0 $secondary,5px 5px 5px 1px $light-gray;
+  -webkit-box-shadow: inset 0 0 4px 0 $secondary,5px 5px 5px 1px $light-gray;
+  -moz-box-shadow: inset 0 0 4px 0 $secondary,5px 5px 5px 1px $light-gray;
+  -o-box-shadow: inset 0 0 4px 0 $secondary,5px 5px 5px 1px $light-gray;
+  border: none;
+  width: 96%;
+  font-size: 1rem;
+  font-weight: 700;
+}
+/*Search Bar*/
+/* Search icon by IcoMoon, made with http://icomoon.io/app/ */
+.sb-search,
+.sb-search-mobile {
+  position: relative;
+  margin: 0;
+  width: 44%;
+  min-width: 49px;
+  height: 50px;
+  float: right;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.sb-search {
+  width: 100%;
+}
+
+.sb-search-input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  outline: none;
+  background: $white;
+  width: 98%;
+  height: 100px;
+  margin: 0;
+  z-index: 10;
+  padding: 20px 35px 20px 20px;
+  font-family: inherit;
+  color: $medium-gray;
+  //border: 1px inset $dark-gray;
+}
+
+.sb-search-input:-moz-placeholder,
+.sb-search-input:-ms-input-placeholder,
+.sb-search-input::-moz-placeholder,
+.sb-search-input::-webkit-input-placeholder {
+  color: $primary;
+}
+
+.sb-icon-search,
+.sb-search-submit {
+  width: 49px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sb-search-submit {
+  background: $white;
+  /* IE needs this */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+  /* IE 8 */
+  /* IE 5-7 */
+}
+
+.sb-icon-search {
+  color: $white;
+  background: $primary;
+  z-index: 90;
+  font-family: 'FontAwesome';
+  -webkit-font-smoothing: antialiased;
+  transition: all 0.06s ease-in;
+  font-weight: 800;
+}
+
+.sb-icon-search:hover {
+  background: $secondary;
+}
+
+.sb-icon-search::before {
+  content: "\f002";
+}
+/* Open state */
+.sb-search-mobile.sb-search-open .no-js .sb-search,
+.sb-search.sb-search-open {
+  width: 100%;
+}
+
+.no-js .sb-search .sb-icon-search,
+.sb-search-mobile.sb-search-open .sb-icon-search,
+.sb-search.sb-search-open .sb-icon-search {
+  background: $secondary;
+  color: $white;
+  z-index: 11;
+}
+
+.no-js .sb-search .sb-search-submit,
+.sb-search.sb-search-open .sb-search-submit {
+  z-index: 90;
+}

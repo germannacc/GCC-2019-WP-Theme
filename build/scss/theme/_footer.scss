@@ -1,0 +1,279 @@
+.site-footer {
+  
+  background: $secondary;
+  color: $white;
+  text-align: center;
+    z-index: 10;
+     @media screen and (min-width: 40em) {
+    
+     text-align: left;
+
+    }
+
+  .top-footer {
+
+   .custom-logo-link {
+    margin: 0 0 2rem 0;
+    }
+
+    .marketing-site-footer-block  {
+    margin-bottom: 20px;
+  
+  }
+
+      padding: 2rem;
+
+    .contact-icon, .contact {
+      
+        display: inline-block;
+
+
+        @media screen and (max-width: 39.9375em) {
+ 
+          display: block;
+
+        }
+
+         @media screen and (min-width: 40em) {
+
+         display: inline-block;
+
+         }
+
+    }
+
+    .contact-icon {
+     vertical-align: top;
+     margin-top: 5px;
+    }
+
+    .contact {
+
+      margin-left: 0;
+
+      @media screen and (min-width: 40em) {
+
+      margin-left: 10px;
+
+      }
+
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    text-align: center;
+
+             @media screen and (min-width: 40em) {
+
+              font-size: 1.4rem;
+              text-align: left;
+
+             }
+  }
+
+  p {
+    line-height: 1.8rem;
+    text-align: center;
+     @media screen and (min-width: 40em) {
+      text-align: left;
+     }
+  }
+
+  a[href^="tel"] {
+  color: inherit; /* Inherit text color of parent element. */
+  text-decoration: none; /* Remove underline. */
+  /* Additional css `propery: value;` pairs here */
+}
+
+}
+
+  @include breakpoint(small only) {
+    .columns {
+      margin-bottom: 0;
+    }
+  }
+
+  .menu {
+
+    li {
+
+    a {
+      padding: 0 1rem 0 0;
+      font-weight: 600;
+      color: $light-gray;
+      font-size: .85rem;
+       width: auto;
+       display: inline-block;
+
+    &:hover {
+      color: $white;
+      text-decoration: underline;
+    }
+
+  }
+
+}
+
+}
+
+.footer-links {
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    ul.menu.vertical {
+      padding-top: 0;
+      padding-bottom: 0;
+
+
+      li {
+
+        margin-bottom: 0;
+
+        a {
+          line-height: 1.4rem;
+          font-weight: 700;
+          color: $light-gray;
+          padding: 0.2rem;
+        
+
+        &:hover {
+          color: $white;
+          text-decoration: underline;
+
+        }
+      }
+}
+      .active > a {
+        background-color: $secondary;
+        color: $white;
+        text-decoration: underline;
+
+        &:hover {
+
+        background-color: $secondary;
+        color: $white;
+        text-decoration: underline;
+
+        }
+
+
+      }
+
+    }
+
+  }
+
+
+.social {
+
+  .social-icons {
+    
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+
+    @media screen and (min-width: 40em) {
+
+      align-items: left;
+      justify-content: left;
+      margin: 0;
+      text-align: left;
+
+    }
+
+        li {
+
+          a {
+              
+              cursor: pointer;
+              display: inline-block;
+              color: $white;
+              
+              span {
+                
+                color: $white;
+                padding: 1rem .5rem;
+                text-align: center;               
+                width: auto;
+              
+              }
+              span:hover {
+                
+                color: $primary;
+              
+              }
+              span.icon-text {
+                
+                display: block;
+                text-indent: -99999px;
+                display: none;
+              
+              }
+          }
+        }
+      }
+  }
+}
+
+.site-footer-bottom {
+  background: $black;
+  padding: 1rem 1rem;
+  margin-top: 2rem;
+  
+  @include breakpoint(medium down) {
+    text-align: center;
+  }
+
+  .bottom-footer-content {
+
+    padding: 0 2rem;
+
+
+.tips-logo {
+  background: url("../media/tipslogo-white.png") no-repeat;
+  height: 55px;
+  width: 132px;
+  text-indent: -9999px;
+  display: block;
+  margin: 0 auto 1rem auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  z-index: 2;
+
+  @media screen and (min-width: 40em) {
+
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  margin: 0;
+
+  }
+
+}
+
+  p {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin: .4rem auto;
+    line-height: 1rem;
+    font-size: 0.8rem;
+    a {
+      color: $light-gray;
+      font-weight: 700;
+    }
+    a:hover {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+
+}
+
+}

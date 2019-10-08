@@ -1,0 +1,206 @@
+/* Large and up */
+@media screen and (min-width: 64em) {
+
+  .hero-section-plain {
+    h1.entry-title {
+      font-size: 3rem;
+
+    }
+  }
+
+  ul.dropdown.menu {
+    li.mygcc {
+      a {
+        padding: 0.9rem 3rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .content-area {
+    display: flex;
+  }
+
+  .entry-content {
+    padding: 1rem 0 2rem 1rem;
+
+    .callout.primary {
+
+      h2, h3 {
+        font-size: 1.2rem;
+      }
+      h4, h5 {
+        margin-bottom: 0;
+
+      }
+    }
+    .columns.large-6 {
+    .callout.primary {
+
+          h2, h3 {
+            font-size: 1.2rem;
+          }
+
+    a.button.primary {
+
+      font-size: 1rem;
+  }
+        }
+
+  ul {
+    padding-left: 1rem;
+
+    li {
+      a {
+        font-size:1rem;
+      }
+
+    }
+  }
+      }
+
+  }
+
+
+  .hero-section-text {
+
+  ul.page-icons {
+      position: absolute;
+      bottom: 0;
+      right: 2rem;
+      z-index: 1;
+      display: block;
+        li  {
+            display: inline-block;
+
+             a  {
+
+              padding: 1rem 0 1rem .5rem;
+
+
+              span {
+                display: inline-block;
+              }
+
+              span.icon-text {
+
+                font-weight: 600;
+                padding: 1rem .5rem;
+
+              }
+
+             }
+
+        }
+
+  }
+
+}
+  .tagline {
+    font-weight: 600;
+    padding: 0 0 0 0.4rem;
+    font-size: 1rem;
+  }
+
+  #main-menu {
+    .gcc-main-nav {
+      background-color: $light-gray;
+      margin: 0;
+      position: relative;
+
+      li {
+        a {
+          font-size: 1.2rem;
+          padding: 0.3rem 1rem 0.3rem 1rem;
+        }
+
+        ul.nested {
+          li {
+            a {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+
+    #pathways {
+      .pathways-content {
+        h2 {
+          font-size: 3.2rem;
+        }
+      }
+    }
+
+    #getting-started {
+      .getting-started-content {
+        h2 {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    #highlights {
+      padding: 8rem 3rem 4rem;
+
+      .highlights-content {
+        h2 {
+          left: 35%;
+          margin: 0 -1rem 2rem auto;
+          padding: 1rem 0;
+          width: 60%;
+        }
+      }
+    }
+  }
+
+  .workforce-explore-content {
+    background-color: $light-gray;
+
+    .callout {
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      img {
+        margin-bottom: 1rem;
+      }
+      p {
+        padding: 0;
+        display: block;
+        padding-bottom: 1.8rem;
+        margin-bottom: 40px;
+        clear: both;
+      }
+      a.button {
+        font-size: 1.2rem;
+      }
+    }
+
+  }
+}
+
+.callout.callout-workforce-highlights {
+
+  h4.post-title {
+    min-height: 100px;
+    font-size: 1.2rem;
+  }
+  min-height: 520px !important;
+  border: 1px solid $medium-gray !important;
+
+}
+
+.page-nav {
+  flex: 1;
+
+  .widget p {
+    padding: 0;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+
+}

@@ -1,0 +1,54 @@
+/* Medium and up */
+@media screen and (min-width: 40em) {
+
+//About germanna page custom styles
+.page-id-1221 .entry-content .medium-6.columns {
+  margin-bottom: 40px;
+}
+.page-id-1221 .entry-content .medium-6.columns .callout.primary {
+
+min-height: 100%;
+
+}
+
+
+}
+
+//PTA custom styles
+.page-id-92 .entry-content .columns, .page-id-21833 .entry-content .columns, .page-id-5761 .entry-content .columns {
+
+padding-left: 0;
+
+}
+
+
+//contact pages
+
+.page-id-18651 .entry-content .medium-4.columns .callout.primary {
+  min-height: 450px;
+  margin-bottom: 1rem;
+}
+
+
+//speech policy
+
+.page-id-25625 .entry-content {
+    padding: 2rem 1rem 10rem 1rem;
+  }
+
+//full width page
+.page-template-page-full .entry-content .columns.large-6
+
+{
+
+
+ul {
+      padding-left: 0;
+}
+
+.callout.primary {
+  ul {
+    padding: 0 1rem;
+  }
+}
+}

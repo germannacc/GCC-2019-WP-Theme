@@ -1,0 +1,70 @@
+.column:last-child:not(:first-child),
+.columns:last-child:not(:first-child) {
+  float: left !important;
+}
+
+.callout.primary.employee-profile {
+  padding: 1rem;
+  background-color: $white;
+  color: $body-font-color;
+
+  .profile-container {
+    padding: 0;
+  }
+
+  img {
+    min-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 1rem;
+  }
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+  h3 {
+    background-color: #f9f9f9;
+    color: $secondary;
+    line-height: normal;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+
+  }
+
+  h3,
+  p {
+
+    margin-left: 0rem;
+    padding-left: 0rem;
+  }
+
+
+      h4 {
+       padding-left: 0;
+       margin-bottom: 0;
+       padding-bottom: .5rem;
+       line-height: normal;
+       font-size: 1.4rem;
+      }
+
+  .thumbnail {
+    padding: 0;
+    border: none;
+  }
+
+  .position-info {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .contact-info {
+
+    font-size: 1rem;
+    padding: 1rem;
+
+    a {
+      text-transform: lowercase;
+    }
+  }
+}

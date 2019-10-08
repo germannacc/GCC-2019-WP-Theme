@@ -1,0 +1,78 @@
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .off-canvas {
+    display: block !important;
+  }
+
+  .gcc-main-nav {
+    background-color: $light-gray !important;
+    margin: 1rem 0;
+    position: relative;
+    li {
+        a {
+          padding: 0.5rem 2rem 0.5rem 1.2rem;
+  }
+}
+
+ul.vertical.menu {
+  top: -100px;
+}
+    }
+
+//page headings
+.hero-section {
+  height: auto;
+  img {
+  height: auto;
+}
+}
+
+.hero-section-plain {
+  h1.entry-title {
+}
+}
+
+.hero-section-single {
+  height: 40vh;
+  img {
+    width: 100%;
+  margin-left: 0;
+  height: 40vh;
+}
+
+.hero-section-text {
+  bottom: 14%;
+  padding: 0;
+}
+}
+
+.callout.callout-workforce-highlights {
+
+  h4.post-title {
+    min-height: 40px;
+    font-size: 1.2rem;
+  }
+  min-height: 350px !important;
+  border: 1px solid $medium-gray !important;
+}
+
+.entry-content {
+  padding: 2rem;
+}
+
+.entry-content {
+  .medium-1, .medium-2, .medium-3 ,.medium-4, .medium-5, .medium-6, .medium-7, .medium-8, .medium-9, .medium-10, .medium-11, .medium-12, .large-1, .large-2, .large-3 ,.large-4, .large-5, .large-6, .medium-7, .large-8, .large-9 .large-10, .large-11, .large-12  {
+      width: 100%;
+}
+
+}
+
+.page-id-21833 .entry-content .medium-6.columns .callout.primary, .page-id-5761 .entry-content .medium-6.columns .callout.primary {
+
+    min-height: 300px;
+    margin-bottom: 1rem;
+
+}
+
+
+}

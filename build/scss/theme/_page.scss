@@ -1,0 +1,472 @@
+article {
+  position: relative;
+}
+
+.content-area {
+  background: $white;
+  position: relative;
+
+}
+
+.pathways-row-2 {
+  margin: auto;
+  width: 75%;
+}
+
+#pathways .pathways-content .pathways-row-1 .column,
+#pathways .pathways-content .pathways-row-1 .columns,
+#pathways .pathways-content .pathways-row-2 .column,
+#pathways .pathways-content .pathways-row-2 .columns {
+  float: left !important;
+}
+.entry-content {
+  padding: 1rem 1.4rem;
+  overflow: hidden;
+  border: none;
+  background-color: $white;
+  
+  .columns {
+    padding-left: 0;
+
+}
+p {
+
+  a {
+    text-decoration: underline;
+  }
+
+}
+
+p.lead {
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 2.4rem;
+}
+
+ol,
+  ul {
+li {
+
+font-size: 1rem;
+
+a {
+  text-decoration: underline;
+}
+    }
+  }
+
+h2 {
+  color: $secondary;
+}
+
+/* unvisited link */
+a:link {
+    color: $primary;
+
+}
+
+/* visited link */
+a:visited {
+    color: #666633;
+}
+
+/* mouse over link */
+a:hover {
+    color: $secondary;
+}
+
+/* selected link */
+a:active {
+    color: $primary;
+}
+
+a {
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* unvisited link */
+a.button:link {
+    color: $white;
+}
+
+/* visited link */
+a.button:visited {
+    color: $white;
+    background-color: $secondary;
+}
+
+/* mouse over link */
+a.button:hover {
+    color: $primary;
+    background-color: $medium-gray
+}
+
+/* selected link */
+a.button:active {
+    color: $primary;
+    background-color: $medium-gray;
+}
+
+/* unvisited link */
+a.button.hollow:link {
+    color: $primary;
+}
+
+/* visited link */
+a.button.hollow:visited {
+    color: $primary;
+    background-color: $secondary;
+}
+
+/* mouse over link */
+a.button.hollow:hover {
+    color: $white;
+    background-color: $primary;
+}
+
+/* selected link */
+a.button.hollow:active {
+    color: $secondary;
+    background-color: $medium-gray;
+}
+
+ul.accordion {
+  margin-bottom: 2rem;
+  li.accordion-item {
+      a.accordion-title {
+        line-height: 1.8rem;
+        border-bottom: 1px solid $medium-gray;
+        border-top: 1px solid $medium-gray;
+        font-weight: 800;
+}
+    }
+  }
+
+.button-group a {
+  margin-right: 1rem;
+}
+
+//custom wpforms styles
+
+.wpforms-field-label {
+}
+
+.wpforms-field-sublabel {
+  margin-bottom: 1rem !important;
+}
+
+button.wpforms-page-next  , button.wpforms-page-prev  {
+
+  background-color: $secondary !important;
+  color: $white !important;
+  font-weight: 800 !important;
+  font-size: 1rem !important;
+  border-radius: 25px !important;
+
+}
+button:hover.wpforms-page-next  , button:hover.wpforms-page-prev  {
+
+  background-color: $primary !important;
+  color: $white !important;
+
+}
+.label {
+
+    padding: .3rem 1rem;
+    margin: 0 1rem;
+}
+table .label {
+  margin-left: 1rem;
+}
+.spring-save {
+ background-image: url('https://www.germanna.edu/wp-content/uploads/spring-save.jpg');
+ background-position: top right; 
+ background-repeat: none; 
+ background-size: cover;
+ background-color: #eee;
+ margin: 0 0 21px 0;
+ padding: 21px;
+ height: 350px; 
+
+}
+
+.spring-skill {
+ background-image: url('https://www.germanna.edu/wp-content/uploads/spring-skill.jpg');
+ background-position: top right; 
+ background-repeat: none; 
+ background-size: cover;
+ background-color: #eee;
+ margin: 0 0 21px 0;
+ padding: 21px;
+ height: 350px; 
+
+}
+
+.spring-learn {
+ background-image: url('https://www.germanna.edu/wp-content/uploads/spring-learn.jpg');
+ background-position: top right; 
+ background-repeat: none; 
+ background-size: cover;
+ background-color: #eee;
+ margin: 0 0 21px 0;
+ padding: 21px;
+ height: 350px; 
+
+}
+
+}
+
+.moretag {
+  padding: 1rem 0;
+  display: block;
+}
+.page-nav {
+  background-color: $light-gray;
+  padding: 0 !important;
+  margin: 0 1.2rem 0 0;
+  float: left;
+}
+//Page Side bar
+
+.widget {
+  margin-bottom: 1rem;
+  h3 {
+  background-color: $medium-gray;
+  border-bottom: 2px solid $primary;
+  color: $dark-gray;
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  margin: 0;
+
+
+}
+
+.textwidget {
+  padding: 1rem 2rem;
+
+a {
+  text-decoration: underline;
+}
+
+}
+}
+
+.department-links {
+  ul.vertical.menu {
+    margin: 0;
+    padding: 0;
+
+  li {
+    a:link {
+        padding: 0.5rem 2rem;
+        font-weight: 400;
+        color: $dark-gray;
+        line-height: 1.4rem;
+        font-size: 1rem;
+      }
+
+    /* visited link */
+    a:visited {
+        color: $secondary;
+    }
+
+    /* mouse over link */
+    a:hover {
+      color: $primary;
+      text-decoration: underline;
+    }
+
+    /* selected link */
+    a:active {
+        color: $primary;
+    }
+
+    }
+
+li.active {
+  text-decoration: underline;
+  background-color: #e2e2e2;
+}
+.active > a {
+  color: $primary;
+  text-decoration: underline;
+}
+  }
+}
+
+.widget ul:nth-child(1).menu {
+  li:first-child {
+    background-color: $medium-gray;
+  color: $dark-gray;
+  width: 100%;
+  padding: 1rem 1rem;
+  border-bottom: 2px solid $primary;
+  a {
+    font-weight: 600;
+  line-height: 1.8rem;
+  padding: 0 1rem;
+  background-color: $medium-gray;
+
+}
+  }
+
+li:last-child {
+  border-bottom: none;
+}
+
+li:last-child a,
+  li:last-child div {
+  border-bottom: none;
+}
+}
+
+.widget {
+  padding: 0;
+  ul.menu {
+    margin: 0;
+
+    li {
+      display: block;
+      width: 100%; //do not remove
+      border-bottom: 1px solid $medium-gray;
+      padding: 0;
+
+      a:link {
+          font-weight: 600;
+          padding: 1rem 1.8rem;
+          font-weight: bold;
+          color: $dark-gray;
+          font-size: 1rem;
+          line-height: 1.4rem;
+        }
+
+      /* visited link */
+      a:visited {
+          color: $primary;
+          text-decoration: underline;
+      }
+
+      /* mouse over link */
+      a:hover {
+        color: $primary;
+        text-decoration: underline;
+      }
+
+      /* selected link */
+      a:active {
+          color: $primary;
+      }
+
+      }
+
+  .active > a {
+    background-color: $light-gray;
+    color: $secondary;
+    font-weight: 800;
+  }
+
+}
+.social-icons {
+  margin: 0;
+  padding: 0;
+  li {
+  list-style: none;
+  width: auto;
+  display: inline-block;
+  a {
+        padding: 0.4rem 0.2rem;
+  span {
+  color: $primary;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid $primary;
+  border-radius: 100%;
+  text-align: center;
+}
+
+span:hover {
+  color: $dark-gray;
+  border: 1px solid $dark-gray;
+}
+      }
+    }
+  }
+}
+
+.menu-about-governance-menu-container {
+  ul.menu {
+    margin: 1rem 0;
+  li {
+      display: block;
+  width: 100%;
+  a {
+        padding: 0.5rem 1rem;
+  font-weight: bold;
+  color: $dark-gray;
+  line-height: 1.4rem;
+}
+
+a:hover {
+  background-color: $black;
+  color: $white;
+}
+    }
+
+.active > a {
+  background-color: $black;
+  color: $white;
+}
+  }
+}
+
+.menu-facts-and-figures-container {
+  ul.menu {
+    margin: 1rem 0;
+  li {
+      display: block;
+  width: 100%;
+  a {
+        padding: 0.5rem 1rem;
+  font-weight: bold;
+  color: $dark-gray;
+}
+
+a:hover {
+  background-color: $black;
+  color: $white;
+}
+    }
+
+.active > a {
+  background-color: $black;
+  color: $white;
+}
+  }
+}
+
+.entry-footer {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+/*Tabs*/
+.fp-tabs-wrap {
+  margin-bottom: 1.6rem;
+}
+/*callout equal heights*/
+.callout.small {
+  padding: 0.5rem;
+  position: relative;
+  ul {
+
+  li {
+  padding: 0.3rem 0;
+}
+  }
+}
