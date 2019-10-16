@@ -10,12 +10,15 @@ get_header(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <?php
   while ( have_posts() ) : the_post(); ?>
-  <?php //Page Heading
-  get_template_part( 'template-parts/content', 'page-heading' );
-  ?>
+
   <div class="row expanded gutter-small content-area">
    
     <div class="small-12 medium-12 large-9 float-left columns" >
+<div class="entry-content" id="main" tabindex="0">
+  <?php //Page Heading
+  get_template_part( 'template-parts/content', 'page-heading' );
+  ?>
+
 
       <?php putRevSlider( 'workforce-slider' ); ?>
 
@@ -45,7 +48,8 @@ get_header(); ?>
 
       </div>
     </div>
-    
+     </div>
+
     <?php get_sidebar();?>
     
     <footer class="entry-footer">
