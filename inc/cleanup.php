@@ -62,8 +62,7 @@ remove_action( 'admin_print_styles', 'print_emoji_styles' );
 //add_filter( 'style_loader_src', 'gcc_wp_2018_remove_wp_ver_css_js', 9999 );
 // Remove WP version from scripts
 //add_filter( 'script_loader_src', 'gcc_wp_2018_remove_wp_ver_css_js', 9999 );
-// Prevent unneccecary info from being displayed
-add_filter( 'login_errors',create_function( '$a', 'return null;' ) );
+
 // remove OneAll Social script from regular page
 remove_action ('wp_head', 'oa_social_login_add_javascripts');
 }
