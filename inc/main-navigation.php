@@ -41,7 +41,7 @@ function gcc_wp_2018_quicklinks_bar() {
         'container' => true,             // remove menu container
         'container_class' => '',          // class of container
         'menu' => '',
-        'items_wrap' => '<map name="QuicklinksNav"><nav><ul class="dropdown menu align-center" data-dropdown-menu >%3$s</ul></nav></map>' ,                  // menu name
+        'items_wrap' => '<map name="QuicklinksNav"><nav><ul class="dropdown menu" data-dropdown-menu >%3$s</ul></nav></map>' ,                  // menu name
         'menu_class' => '',        // adding custom nav class
         'theme_location' => 'quicklinks-bar',  // where it's located in the theme
         'before' => '',                   // before each link <a>
@@ -52,6 +52,23 @@ function gcc_wp_2018_quicklinks_bar() {
     	   'fallback_cb' => 'main_nav_fb',   // fallback function (see below)
         'walker' => ''      // walker to customize menu (see foundation-nav-walker)
 	));
+}
+function gcc_wp_2018_quicklinks_bar_secondary() {
+         wp_nav_menu(array(
+        'container' => true,             // remove menu container
+        'container_class' => '',          // class of container
+        'menu' => '',
+        'items_wrap' => '<map name="QuicklinksNav-Secondary"><nav><ul class="menu quicklinks-secondary align-center float-right" data-dropdown-menu >%3$s</ul></nav></map>' ,                  // menu name
+        'menu_class' => '',        // adding custom nav class
+        'theme_location' => 'quicklinks-bar-secondary',  // where it's located in the theme
+        'before' => '',                   // before each link <a>
+        'after' => '',                    // after each link </a>
+        'link_before' => '',              // before each link text
+        'link_after' => '',               // after each link text
+        'depth' => 0,                     // limit the depth of the nav
+           'fallback_cb' => 'main_nav_fb',   // fallback function (see below)
+        'walker' => ''      // walker to customize menu (see foundation-nav-walker)
+    ));
 }
 function gcc_wp_2018_calltos() {
          wp_nav_menu(array(
@@ -66,7 +83,7 @@ function gcc_wp_2018_calltos() {
         'link_before' => '',              // before each link text
         'link_after' => '',               // after each link text
         'depth' => 0,                     // limit the depth of the nav
-    	   'fallback_cb' => 'main_nav_fb',   // fallback function (see below)
+    	'fallback_cb' => 'main_nav_fb',   // fallback function (see below)
         'walker' => ''      // walker to customize menu (see foundation-nav-walker)
 	));
 }
