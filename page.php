@@ -12,7 +12,7 @@ get_header(); ?>
   while ( have_posts() ) : the_post(); ?>
 
   <div class="row expanded content-area">
-    <div class="small-12 medium-12 large-8 float-left columns" >
+    <div class="small-12 medium-12 large-9 float-left columns" >
       <div class="entry-content" id="main" tabindex="0">
         
                 <?php //Page Heading
@@ -27,10 +27,6 @@ get_header(); ?>
       // if page doesn't have a featured image
       ?>
       <?php } ?>
-
-        <?php //Page Heading
-        get_template_part( 'template-parts/content', 'page-alert' );
-        ?>
         <?php
         the_content();
         ?>
