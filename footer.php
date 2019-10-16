@@ -84,7 +84,7 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
   <p>&copy;
     <?php echo date('Y'); ?>
     <?php bloginfo( 'name' ); ?><br/>
-      <?php the_field('bottom_footer_text', 'option'); ?>
+    <?php the_field('bottom_footer_text', 'option'); ?>
 
   </p>
 
