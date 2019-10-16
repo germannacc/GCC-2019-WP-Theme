@@ -1,7 +1,7 @@
 <?php
 $args =  array (
 'post_type' => 'post',
-'posts_per_page'=>6
+'posts_per_page'=>5
 );
 ?>
 <?php
@@ -9,46 +9,23 @@ $query = new WP_Query( $args ); ?>
 <?php if ( $query->have_posts() ) : ?>
 <?php while ( $query->have_posts() ) : $query->the_post();?>
 <?php if ( has_post_thumbnail() ) : ?>
-<div class="row latest-post">
+<div class="row latest-post" id="news-post">
   <div class="medium-12 columns">
     <h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-    <p>
-      <?php the_excerpt(
-      sprintf(
-            wp_kses(
-              /* translators: %s: Name of current post. Only visible to screen readers */
-              __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'gcc-wp-2018' ),
-              array(
-                'span' => array(
-                  'class' => array(),
-                ),
-              )
-            ),
-            get_the_title()
-          )
-      );
-      ?>
-    </p>
+        <?php if ( 'post' === get_post_type() ) : ?>
+        <p><?php gcc_wp_2018_posted_on();
+      ?></p>
+      <?php endif; ?>
   </div>
 </div>
 <?php else: ?>
 <div class="row latest-post">
   <div class="medium-12 columns">
     <h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-    <?php the_excerpt(
-    sprintf(
-          wp_kses(
-            /* translators: %s: Name of current post. Only visible to screen readers */
-            __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'gcc-wp-2018' ),
-            array(
-              'span' => array(
-                'class' => array(),
-              ),
-            )
-          ),
-          get_the_title()
-        )
-    ); ?>
+      <?php if ( 'post' === get_post_type() ) : ?>
+        <p><?php gcc_wp_2018_posted_on();
+      ?></p>
+      <?php endif; ?>
   </div>
 </div>
 <?php endif; ?>
