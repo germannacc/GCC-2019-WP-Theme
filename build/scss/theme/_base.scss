@@ -4,13 +4,9 @@
   border:0;
 }
 
-.row {
+.wrapper {
   
-  .fixed-width
-  {
-    margin: 0 auto;
-    min-width: 98%;
-    overflow: hidden;
-}
-
+  width: 96rem !important;
+  margin: 0 auto;
+  overflow: hidden;
 }
