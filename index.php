@@ -11,6 +11,7 @@
 * @package gccwp-2018
 */
 get_header();
+
 $post_page_featured_image = get_field('post_page_featured_image', 'option');
 $post_page_title= get_field('post_page_title', 'option');
 // vars
@@ -26,40 +27,74 @@ $post_page_title= get_field('post_page_title', 'option');
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <?php  if ( !empty( $post_page_featured_image ) ) { ?>
-  <div class="row gutter-small expanded">
+
+
+<!--Page Content-->
+<div class="row gutter-small expanded content-area">
+  <div class="small-12 medium-9 entry-content" id="main" tabindex="0">
+    
     <header class="hero-section hero-section-single">
-      <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+     
       <div class="hero-section-text">
         <h1><?php echo $post_page_title; ?></h1>
       </div>
-      <div class="row expanded crumbs-container show-for-medium">
-        <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
-          <?php gcc_wp_2018_post_page_breadcrumbs(); ?>
-        </nav>
-      </div>
+<!-- 
+     <img src="<?php //echo $thumb; ?>" alt="<?php// echo $alt; ?>" width="<?php //echo $width; ?>" height="<?php //echo $height; ?>" /> -->
+
     </header>
-  </div>
+
   <?php  }  else {  //.pagesubbanner
   // if page doesn't have a featured image
   ?>
-  <div class="row gutter-small expanded">
     <header class="hero-section-plain">
       <?php //if the child page doesn't have a featured images
       //gcc_featured_image_on_child(); ?>
       <div class="hero-section-text">
         <h1><?php echo $post_page_title; ?></h1>
       </div>
-      <div class="crumbs-container-plain">
-        <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
-          <?php gcc_wp_2018_post_page_breadcrumbs(); ?>
-        </nav>
-      </div>
     </header>
-  </div>
   <?php } ?>
-  <?php //Display all post content
-  get_template_part( 'template-parts/content', 'postpage' );
-  ?>
+
+    <?php
+
+    $args =  array (
+    'post_type' => 'post',
+    'posts_per_page'=>5
+    );
+    ?>
+
+    <?php
+    $query = new WP_Query( $args ); ?>
+    <?php if ( $query->have_posts() ) : ?>
+    <?php while ( $query->have_posts() ) : $query->the_post();?>
+    <?php if ( has_post_thumbnail() ) : ?>
+    
+    <div class="row latest-post">
+      <div class="medium-12 columns">
+        <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+      </div>
+    </div>
+    <?php else: ?>
+    <div class="row latest-post" id="news-post">
+      <div class="medium-12 columns">
+        <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+      </div>
+    </div>
+
+
+    <?php endif; ?>
+    <?php endwhile;  ?>
+    <?php wp_reset_postdata(); ?>
+    <?php else : ?>
+    <p><?php esc_html_e( 'Sorry, no posts matched your criteria.', 'gcc-wp-2018' ); ?></p>
+    <?php endif; ?>
+    
+
+</div>
+<?php //Template Sidebar
+get_sidebar(); ?>
+</div>
+
 </article>
 <?php
 get_footer();
