@@ -20,7 +20,7 @@ article {
   float: left !important;
 }
 .entry-content {
-  padding: 1rem 1.4rem;
+  padding: 1rem 1.2rem;
   overflow: hidden;
   border: none;
   background-color: $white;
@@ -182,6 +182,7 @@ button:hover.wpforms-page-next  , button:hover.wpforms-page-prev  {
 table .label {
   margin-left: 1rem;
 }
+
 .spring-save {
  background-image: url('https://www.germanna.edu/wp-content/uploads/spring-save.jpg');
  background-position: top right; 
@@ -224,22 +225,29 @@ table .label {
   padding: 1rem 0;
   display: block;
 }
+
 .page-nav {
+  
   background-color: $light-gray;
   padding: 0 !important;
-  margin: 0 1.2rem 0 0;
+  margin: 0;
   float: left;
+
+  h3 {
+    padding: 1rem 0 0 .5rem;
+  }
 }
 //Page Side bar
 
 .widget {
   margin-bottom: 1rem;
+  
   h3 {
   background-color: $medium-gray;
   border-bottom: 2px solid $primary;
   color: $dark-gray;
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 1rem .5rem;
   font-size: 1.2rem;
   margin: 0;
 
@@ -247,7 +255,8 @@ table .label {
 }
 
 .textwidget {
-  padding: 1rem 2rem;
+
+  padding: 1rem;
 
 a {
   text-decoration: underline;
@@ -257,6 +266,7 @@ a {
 }
 
 .department-links {
+
   ul.vertical.menu {
     margin: 0;
     padding: 0;
@@ -299,34 +309,10 @@ li.active {
   }
 }
 
-.widget ul:nth-child(1).menu {
-  li:first-child {
-    background-color: $medium-gray;
-  color: $dark-gray;
-  width: 100%;
-  padding: 1rem 1rem;
-  border-bottom: 2px solid $primary;
-  a {
-    font-weight: 600;
-  line-height: 1.8rem;
-  padding: 0 1rem;
-  background-color: $medium-gray;
-
-}
-  }
-
-li:last-child {
-  border-bottom: none;
-}
-
-li:last-child a,
-  li:last-child div {
-  border-bottom: none;
-}
-}
 
 .widget {
   padding: 0;
+
   ul.menu {
     margin: 0;
 
@@ -337,8 +323,8 @@ li:last-child a,
       padding: 0;
 
       a:link {
-          font-weight: 600;
-          padding: 1rem 1.8rem;
+          font-weight: 400 !important;
+          padding: .8rem .5rem;
           font-weight: bold;
           color: $dark-gray;
           font-size: 1rem;
@@ -367,9 +353,41 @@ li:last-child a,
   .active > a {
     background-color: $light-gray;
     color: $secondary;
-    font-weight: 800;
+    font-weight: 100;
   }
 
+}
+
+li.page_item_has_children {
+ 
+    background-color: $medium-gray;
+    color: $dark-gray;
+    width: 100%;
+    padding: 1.2rem 1rem;
+      
+      a {
+      font-weight: 100;
+      line-height: 1.8rem;
+      padding: 0 1rem;
+      background-color: $medium-gray;
+
+      }
+
+      ul.children {
+          background-color: $light-gray;
+          margin-left: 0;
+          padding: 0;
+              border-top: 2px solid $primary !important;
+
+        li {
+          background-color: $light-gray;
+          padding-left: .5rem;
+
+          a {      background-color: $light-gray;
+}
+        }
+
+    }
 }
 .social-icons {
   margin: 0;
@@ -394,57 +412,6 @@ span:hover {
 }
       }
     }
-  }
-}
-
-.menu-about-governance-menu-container {
-  ul.menu {
-    margin: 1rem 0;
-  li {
-      display: block;
-  width: 100%;
-  a {
-        padding: 0.5rem 1rem;
-  font-weight: bold;
-  color: $dark-gray;
-  line-height: 1.4rem;
-}
-
-a:hover {
-  background-color: $black;
-  color: $white;
-}
-    }
-
-.active > a {
-  background-color: $black;
-  color: $white;
-}
-  }
-}
-
-.menu-facts-and-figures-container {
-  ul.menu {
-    margin: 1rem 0;
-  li {
-      display: block;
-  width: 100%;
-  a {
-        padding: 0.5rem 1rem;
-  font-weight: bold;
-  color: $dark-gray;
-}
-
-a:hover {
-  background-color: $black;
-  color: $white;
-}
-    }
-
-.active > a {
-  background-color: $black;
-  color: $white;
-}
   }
 }
 
