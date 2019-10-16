@@ -27,8 +27,19 @@
 
   <div class="top-bar-left collapse stacked-for-medium">
 
+  <div class="small-12 large-6 columns" style="padding: 0; margin: 0;">
+
     <?php  //function located in inc/main-navigation.php
     gcc_wp_2018_quicklinks_bar(); ?>
+
+  </div>
+
+  <div class="small-12 large-6 columns text-right" style="padding: 0; margin: 0;">
+
+    <?php  //function located in inc/main-navigation.php
+    gcc_wp_2018_quicklinks_bar_secondary(); ?>
+
+  </div>
 
   </div>
 
