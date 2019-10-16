@@ -9,35 +9,58 @@ $event_section_heading = get_field('events_section_heading');
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
 	while ( have_posts() ) : the_post(); ?>
-	<div class="hero-section-text">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</div>
-	<div class="row expanded crumbs-container">
-     <div class="small-12 medium-8 large-9 columns">          <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>">
-            <?php the_breadcrumb() ?>
-          </nav>
-       </div>
-   <div class="small-12 medium-4 large-3 columns show-for-landscape">
-      <?php gcc_wp_2018_page_icons() ?>
-  </div>
-	</div>
-	<!--Page Content-->
-	<div class="row gutter-small expanded content-area">
-		<div class="small-12 medium-12 large-9">
-			<?php // if the page has a featured image
+
+  <div class="row expanded content-area">
+    <div class="small-12 medium-12 large-9 float-left columns" >
+      
+      <div class="entry-content" id="main" tabindex="0">
+
+     <?php // if the page has a featured image
 			if  (has_post_thumbnail( ) ) {
 			?>
-			<header class="hero-section">
-				<?php the_post_thumbnail('', array ('alt' => false));  ?>
-			</header>
+
+	<header class="hero-section-text">
+		
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	
+		<div class="crumbs-container">
+         
+         <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>">
+            <?php the_breadcrumb() ?>
+         </nav>
+
+       </div>
+
+		<?php the_post_thumbnail();  ?>
+	
+	</header>
+			
 			<?php
 			}
 			else {
 			//.pagesubbanner
 			// if page doesn't have a featured image
+
+				?>
+
+		<header class="hero-section-text">
+		
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	
+		<div class="crumbs-container">
+         
+         <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>">
+            <?php the_breadcrumb() ?>
+         </nav>
+
+       </div>
+	
+	 </header>
+
 			?>
 			<?php } ?>
-			<div class="entry-content" id="main" tabindex="0">
+
+
 				<?php
 				the_content();
 				?>
