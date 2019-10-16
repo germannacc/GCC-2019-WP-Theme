@@ -293,7 +293,26 @@ color: $white;
 
 .item {
 
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  
+  height: auto; 
+  max-height: auto;
+  
+}
 
+/* Medium and up */
+@media screen and (min-width: 40em) { 
+  
+min-height: 50vh;
+
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+ min-height: 50vh;
+  
+}
 /* ----------- iPhone X ----------- */
 
 /* Portrait and Landscape */
@@ -364,7 +383,7 @@ color: $white;
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 1.5) {
 
-       
+       min-height: 65vh;
 
 }
 
@@ -445,26 +464,6 @@ color: $white;
   
 }
 
-/* Small only */
-@media screen and (max-width: 39.9375em) {
-  
-  height: auto; 
-  max-height: auto;
-  
-}
-
-/* Medium and up */
-@media screen and (min-width: 40em) { 
-  
-min-height: 70vh;
-
-}
-
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
- 
-  
-}
 /* Large and up */
 @media screen and (min-width: 64em) {
 
@@ -564,9 +563,46 @@ z-index: 0;
 }
 /* Medium and up */
 @media screen and (min-width: 40em) { 
-min-height: 70vh;
+min-height: 50vh;
 
 }
+
+
+/* ----------- iPad Pro 10.5" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+
+}
+
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 834px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+min-height: 50vh;
+}
+
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 1112px) 
+  and (max-device-width: 1112px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+min-height: 50vh;
+}
+
 @media screen and (min-width: 64em) {
 
 min-height: 70vh;
